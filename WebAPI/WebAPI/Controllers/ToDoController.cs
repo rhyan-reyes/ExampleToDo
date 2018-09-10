@@ -9,7 +9,8 @@ namespace WebAPI.Controllers
 {
     public class ToDoController : ApiController
     {
-        readonly ToDoService toDoService = new ToDoService();
+        //readonly ToDoService toDoService = new ToDoService();
+        readonly IToDoService toDoService;
 
 
     }
