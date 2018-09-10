@@ -7,9 +7,9 @@ namespace WebAPI.Models
 {
     public class ToDo
     {
-        public int id { get; set; }
-        public string task { get; set; }
-        public DateTime DateCreated { get; set}
+        public int Id { get; set; }
+        public string Task { get; set; }
+        public DateTime DateCreated { get; set; }
         public DateTime DateModified { get; set; }
     }
 }

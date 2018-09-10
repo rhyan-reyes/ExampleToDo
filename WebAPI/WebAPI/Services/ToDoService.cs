@@ -27,10 +27,11 @@ namespace WebAPI.Services
                     while (reader.Read()) {
                         var todo = new ToDo
                         {
-                            Id = (int)reader["id"];
-                        Task = (string)reader["task"];
-                        DateCreated = (string)reader["dateCreated"];
-                        }
+                            Id = (int)reader["Id"],
+                            Task = (string)reader["Task"],
+                            DateCreated = (DateTime)reader["DateCreated"],
+                            DateModified = (DateTime)reader["DateModified"]
+                        };
                     }
                 }
             }
